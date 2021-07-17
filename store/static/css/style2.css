@@ -1,0 +1,60 @@
+header{
+
+    background-color: rgba(188, 186, 201, 0.582);
+    text-shadow: black 2px 2px 4px;
+    font-family: monospace;
+    
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". ChatWindow ChatWindow ." ". ChatWindow ChatWindow ." ". InputZone InputZone .";
+  }
+  
+  .ChatWindow { 
+      grid-area: ChatWindow; 
+      
+     
+      margin-bottom: 0px;
+      background-color: rgba(95, 158, 160, 0.24);
+      border-radius: 2%;
+      box-shadow: dimgrey 2px 2px 4px;
+    
+    }
+
+
+
+    .chatTop{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(188, 188, 209);
+        text-shadow: 1px 1px 1px black;
+       
+        padding-left: 10px;
+  
+    }
+    .chatBody{
+        overflow-y: scroll;
+        margin-top: 0px;
+        height: 200px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255);
+        border: darkslateblue solid 2px  ;
+    }
+  .InputZone { 
+      grid-area: InputZone;
+        margin-top: 8px;
+        background-color: rgba(46, 0, 252, 0.041);
+        max-height: 1px;
+        box-shadow: lightblue 1px 1px;
+       
+    }
+
+    #message{
+
+        display: block;
+        width: 100px;
+    }
